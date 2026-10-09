@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <title>Nadir 𓇼 Manta Cove | Fan Account & Proxy Hub</title>
+  <meta name="description" content="Nadir's personal fan space, overseas proxy buying hub (KR / JP / CN / TW), and private concert ticketing service.">
+  <meta name="author" content="Nadir">
+  <meta name="theme-color" content="#00b4d8">
+
+  <!-- OpenGraph / Social Embed preview for Twitter & Discord -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nadir 𓇼 Manta Cove">
+  <meta property="og:description" content="Personal fan space, overseas proxy orders & concert ticketing war hub. Safe for minors.">
+  <meta property="og:url" content="https://x.com/_Junguwu">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Nadir 𓇼 Manta Cove">
+  <meta name="twitter:description" content="Personal fan space, overseas proxy orders & concert ticketing war hub.">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Handcrafted by Nadir 𓇼 */
+    :root {
+      --deep-ocean: #05162a;
+      --abyss-blue: #020c18;
+      --aero-aqua: #00b4d8;
+      --aero-cyan: #38e1ff;
+      --glass-bg: rgba(10, 32, 60, 0.65);
+      --glass-border: rgba(180, 230, 255, 0.35);
+      --glass-shine: rgba(255, 255, 255, 0.85);
+    }
+
+    /* Fluid root typography for automatic device responsiveness */
+    html {
+      font-size: clamp(13px, 0.85rem + 0.35vw, 16px);
+      -webkit-text-size-adjust: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Smooth auto-scroll marquee for track artist on mobile */
+    .marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      max-width: 95px;
+    }
+    @media (min-width: 640px) {
+      .marquee-container {
+        max-width: 140px;
+      }
+    }
+
+    .marquee-content {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scrollText 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes scrollText {
+      0%, 15% { transform: translateX(0%); }
+      85%, 100% { transform: translateX(-35%); }
+    }
+
+    .marquee-container:hover .marquee-content {
+      animation-play-state: paused;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--abyss-blue);
+      color: #e2f4ff;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .font-carrd-bubble { font-family: 'Comfortaa', cursive, sans-serif; }
+    .font-carrd-tech { font-family: 'Space Grotesk', monospace, sans-serif; }
+    .font-carrd-display { font-family: 'Syne', sans-serif; }
+
+    /* Touch & Horizontal Scroll Optimizations */
+    .touch-scroll-x {
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .touch-scroll-x::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Windows Vista Aero Glass Window Shell */
+    .aero-window {
+      background: radial-gradient(circle at 50% 0%, rgba(20, 60, 110, 0.75) 0%, rgba(6, 25, 48, 0.9) 100%);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(220, 245, 255, 0.45);
+      box-shadow: 
+        0 25px 60px -15px rgba(0, 12, 28, 0.85),
+        0 0 0 1px rgba(0, 180, 216, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.85),
+        inset 0 -1px 1px rgba(0, 150, 255, 0.2);
+    }
+
+    .aero-titlebar {
+      background: linear-gradient(180deg, 
+        rgba(235, 250, 255, 0.85) 0%, 
+        rgba(125, 215, 255, 0.55) 45%, 
+        rgba(15, 130, 210, 0.65) 52%, 
+        rgba(5, 75, 140, 0.85) 100%);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95);
+      text-shadow: 0 1px 2px rgba(0, 20, 50, 0.6);
+    }
+
+    .aero-card {
+      background: linear-gradient(145deg, rgba(16, 45, 82, 0.65) 0%, rgba(8, 26, 48, 0.75) 100%);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(175, 225, 255, 0.25);
+      box-shadow: 
+        0 10px 30px rgba(0, 10, 25, 0.4), 
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .aero-card:hover {
+      border-color: rgba(94, 234, 212, 0.5);
+      box-shadow: 
+        0 15px 35px rgba(0, 20, 50, 0.55),
+        0 0 20px rgba(56, 189, 248, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.6);
+    }
+
+    .aero-btn {
+      background: linear-gradient(180deg, 
+        rgba(255, 255, 255, 0.75) 0%, 
+        rgba(150, 230, 255, 0.5) 48%, 
+        rgba(0, 155, 225, 0.7) 52%, 
+        rgba(0, 115, 185, 0.95) 100%);
+      border: 1px solid rgba(200, 240, 255, 0.75);
+      box-shadow: 
+        0 4px 12px rgba(0, 20, 45, 0.45),
+        inset 0 1px 1px rgba(255, 255, 255, 0.9);
+      text-shadow: 0 1px 2px rgba(0, 30, 60, 0.5);
+      transition: all 0.16s ease-in-out;
+      touch-action: manipulation;
+    }
+    .aero-btn:hover {
+      filter: brightness(1.15);
+      transform: translateY(-1px);
+    }
+    .aero-btn:active {
+      transform: scale(0.97);
+      filter: brightness(0.95);
+    }
+
+    .aero-nav-tab {
+      background: rgba(10, 35, 65, 0.6);
+      border: 1px solid rgba(165, 220, 255, 0.25);
+      color: #bfe5ff;
+      white-space: nowrap;
+      transition: all 0.18s ease;
+      touch-action: manipulation;
+    }
+    .aero-nav-tab:hover {
+      background: rgba(20, 55, 95, 0.8);
+      color: #ffffff;
+      border-color: rgba(186, 230, 253, 0.5);
+    }
+    .aero-nav-tab.active {
+      background: linear-gradient(180deg, #e0f2fe 0%, #38bdf8 49%, #0284c7 51%, #0369a1 100%);
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      text-shadow: 0 1px 2px rgba(0, 30, 70, 0.6);
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.65), inset 0 1px 1px #ffffff;
+    }
+
+    @keyframes waveShimmer {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .shimmer-text {
+      background: linear-gradient(90deg, #b9f3fc, #ffffff, #67e8f9, #bae6fd);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: waveShimmer 6s infinite linear;
+    }
+
+    #ambient-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #030d1a; }
+    ::-webkit-scrollbar-thumb { 
+      background: linear-gradient(180deg, #0284c7, #075985); 
+      border-radius: 4px; 
+    }
+  </style>
+</head>
+
+<body class="relative flex flex-col items-center justify-center p-2.5 sm:p-4 md:p-6 pb-16 min-h-screen">
+
+  <!-- Interactive Ambient Manta Ray & Floating Bubbles Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Audio Element -->
+  <audio id="real-audio-player" src="song.mp3" preload="metadata"></audio>
+
+  <!-- Unified Top-Right Music Toggle Button -->
+  <div class="fixed top-2.5 right-2.5 sm:top-4 sm:right-4 z-40 flex items-center gap-2">
+    <button id="sfx-toggle-btn" onclick="toggleMusicPlayback()" class="aero-card px-3 py-1.5 rounded-full text-xs font-carrd-tech flex items-center gap-1.5 border border-cyan-400/40 text-cyan-200 hover:text-white transition shadow-lg backdrop-blur-md">
+      <span id="music-icon">🔇</span>
+      <span class="hidden sm:inline">Music:</span>
+      <strong id="music-state" class="text-slate-400">OFF</strong>
+    </button>
+  </div>
+
+  <main class="w-full max-w-5xl relative z-10 space-y-4 my-auto">
+
+    <div class="w-full rounded-2xl sm:rounded-3xl overflow-hidden aero-window shadow-2xl">
+
+      <!-- Windows Vista Glass Titlebar -->
+      <div class="aero-titlebar px-3 sm:px-4 py-2 sm:py-2.5 flex items-center justify-between select-none">
+        <div class="flex items-center gap-2 truncate">
+          <svg class="w-4 h-4 text-cyan-100 flex-shrink-0" viewBox="0 0 100 100" fill="currentColor">
+            <path d="M42 22 C40 16 44 14 47 19 C48 21 48 24 45 25 Z" />
+            <path d="M58 22 C60 16 56 14 53 19 C52 21 52 24 55 25 Z" />
+            <path d="M50 24 C45 25 36 28 20 38 C5 47 2 53 8 52 C22 49 35 48 44 56 C46 64 47 74 48 95 C49 96 51 96 52 95 C53 74 54 64 56 56 C65 48 78 49 92 52 C98 53 95 47 80 38 C64 28 55 25 50 24 Z" />
+          </svg>
+          <span class="text-[11px] sm:text-xs font-bold text-white tracking-wide font-carrd-tech drop-shadow truncate">
+            Nadir_Oceanic_OS // Manta_Reef_Workspace.exe
+          </span>
+        </div>
+        <!-- Vista Titlebar Window Buttons -->
+        <div class="flex items-center gap-1.5 flex-shrink-0">
+          <button onclick="playAeroBubble(350)" aria-label="Minimize" class="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded bg-sky-300/80 hover:bg-sky-200 border border-white/60 inline-flex items-center justify-center text-[9px] text-slate-800 font-bold shadow-sm transition">_</button>
+          <button onclick="playAeroBubble(450)" aria-label="Maximize" class="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded bg-cyan-300/80 hover:bg-cyan-200 border border-white/60 inline-flex items-center justify-center text-[9px] text-slate-800 font-bold shadow-sm transition">□</button>
+          <button onclick="playAeroBubble(250)" aria-label="Close" class="w-3.5 h-3.5 sm:w-4 sm:h-4 rounded bg-rose-400/90 hover:bg-rose-300 border border-rose-200 inline-flex items-center justify-center text-[9px] text-white font-bold shadow-sm transition">✕</button>
+        </div>
+      </div>
+
+      <!-- Address Bar + Media Player Controls -->
+      <div class="bg-slate-950/70 border-b border-sky-400/25 px-2.5 sm:px-3 py-2 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-2.5 text-xs">
+        
+        <!-- Faux Browser URL Navigation -->
+        <div class="flex items-center gap-1.5 flex-1 min-w-0">
+          <div class="flex gap-1 text-sky-400 font-bold flex-shrink-0">
+            <button onclick="navigateTabRel(-1)" aria-label="Previous Tab" class="w-6 h-6 rounded bg-slate-900 border border-sky-400/30 flex items-center justify-center hover:text-white hover:bg-sky-900/60 transition">‹</button>
+            <button onclick="navigateTabRel(1)" aria-label="Next Tab" class="w-6 h-6 rounded bg-slate-900 border border-sky-400/30 flex items-center justify-center hover:text-white hover:bg-sky-900/60 transition">›</button>
+            <button onclick="reloadActiveTab()" aria-label="Reload Tab" class="w-6 h-6 rounded bg-slate-900 border border-sky-400/30 flex items-center justify-center hover:text-white hover:bg-sky-900/60 transition">⟳</button>
+          </div>
+          <div class="flex-1 min-w-0 bg-slate-900/90 rounded-lg px-2.5 py-1 font-mono text-[10px] sm:text-[11px] text-cyan-200 border border-sky-400/30 flex items-center justify-between shadow-inner">
+            <span class="truncate">https://nadir.cove/hub/<span id="active-url-slug" class="text-white font-bold">profile</span></span>
+            <span class="text-emerald-400 text-[10px] flex items-center gap-1 font-sans flex-shrink-0 ml-1">
+              <span>🔒</span> <span class="hidden sm:inline">Verified</span> SFW
+            </span>
+          </div>
+        </div>
+
+        <!-- Integrated Windows Media Player 11 Component -->
+        <div class="flex items-center justify-between gap-2.5 bg-sky-950/80 px-2.5 py-1.5 rounded-xl border border-sky-400/30 w-full md:w-auto">
+          
+          <div class="flex items-center gap-2 min-w-0 flex-1 md:flex-initial">
+            <button id="main-play-btn" onclick="toggleMusicPlayback()" aria-label="Play Track" class="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0 rounded-full aero-btn text-white flex items-center justify-center text-xs shadow">
+              <span id="play-symbol">▶</span>
+            </button>
+            <div class="leading-tight overflow-hidden">
+              <div class="text-[11px] font-bold text-white truncate max-w-[140px] sm:max-w-[170px]" id="player-track-name">
+                Jay Park – All I Wanna Do
+              </div>
+              <div class="text-[9px] text-cyan-300 font-mono flex items-center gap-1.5">
+                <span id="player-status-tag" class="shrink-0 text-slate-400">READY</span>
+                <span class="text-slate-400 shrink-0">|</span>
+                <div class="marquee-container">
+                  <span id="player-track-artist" class="marquee-content text-cyan-200">
+                    ft. Hoody, Loco
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-1.5 flex-shrink-0">
+            <!-- Animated mini visualizer canvas -->
+            <canvas id="player-visualizer" width="46" height="16" class="rounded bg-slate-900/80 border border-cyan-400/20"></canvas>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- App Navigation Tabs -->
+      <nav class="p-2 sm:p-2.5 bg-slate-950/50 border-b border-sky-400/20 overflow-x-auto touch-scroll-x flex items-center gap-2" aria-label="Aero App Navigation">
+        <div class="flex items-center gap-2 min-w-max mx-auto sm:mx-0">
+          <button onclick="switchAppTab('profile')" id="nav-tab-profile" class="aero-nav-tab active px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-bold font-carrd-tech flex items-center gap-1.5">
+            <span>🐬</span> Nadir's Cove
+          </button>
+          <button onclick="switchAppTab('shop')" id="nav-tab-shop" class="aero-nav-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-bold font-carrd-tech flex items-center gap-1.5">
+            <span>🛍️</span> Overseas Proxy Hub
+          </button>
+          <button onclick="switchAppTab('ticketing')" id="nav-tab-ticketing" class="aero-nav-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-bold font-carrd-tech flex items-center gap-1.5">
+            <span>🎟️</span> Private Ticketing War
+          </button>
+          <button onclick="switchAppTab('byf-dfi')" id="nav-tab-byf-dfi" class="aero-nav-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-bold font-carrd-tech flex items-center gap-1.5">
+            <span>📜</span> BYF &amp; DNI Reef
+          </button>
+          <button onclick="switchAppTab('dm-gen')" id="nav-tab-dm-gen" class="aero-nav-tab px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-bold font-carrd-tech flex items-center gap-1.5">
+            <span>💬</span> Instant DM Template
+          </button>
+        </div>
+      </nav>
+
+      <!-- ================= TAB: PROFILE ================= -->
+      <div id="tab-content-profile" class="p-3.5 sm:p-6 space-y-4 sm:space-y-6">
+
+        <!-- Hero Aero Profile Showcase Banner -->
+        <div class="relative rounded-2xl overflow-hidden aero-card border border-sky-400/40 p-4 sm:p-6 flex flex-col md:flex-row items-center gap-5 sm:gap-6 text-center md:text-left">
+          <!-- Background Banner Shimmer -->
+          <div class="absolute inset-0 bg-gradient-to-r from-sky-900/60 via-cyan-900/40 to-indigo-950/80 -z-10"></div>
+
+          <!-- Avatar Frame with Aero Gloss Droplet -->
+          <div class="relative flex-shrink-0 flex flex-col items-center">
+            <div class="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full p-1.5 bg-gradient-to-b from-cyan-200 via-sky-400 to-indigo-700 shadow-2xl relative">
+              <div class="w-full h-full rounded-full overflow-hidden bg-slate-950 flex items-center justify-center relative">
+
+                <!-- User Custom Photo with Manta SVG Fallback -->
+                <img id="avatar-custom-img" src="avatar.png" alt="Nadir Avatar" class="w-full h-full object-cover hidden" onerror="this.classList.add('hidden'); document.getElementById('avatar-manta-svg').classList.remove('hidden');" onload="this.classList.remove('hidden'); document.getElementById('avatar-manta-svg').classList.add('hidden');">
+
+                <!-- Majestic Aero Oceanic Manta Ray Artwork -->
+                <svg id="avatar-manta-svg" viewBox="0 0 160 160" class="w-full h-full">
+                  <defs>
+                    <radialGradient id="waterDepth" cx="50%" cy="40%" r="60%">
+                      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.95"/>
+                      <stop offset="55%" stop-color="#034870" stop-opacity="0.95"/>
+                      <stop offset="100%" stop-color="#021528" stop-opacity="1"/>
+                    </radialGradient>
+                    <linearGradient id="sunbeam" x1="20%" y1="0%" x2="80%" y2="100%">
+                      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25"/>
+                      <stop offset="60%" stop-color="#38bdf8" stop-opacity="0.08"/>
+                      <stop offset="100%" stop-color="#0369a1" stop-opacity="0"/>
+                    </linearGradient>
+                    <linearGradient id="mantaBodyGrad" x1="0%" y1="20%" x2="100%" y2="80%">
+                      <stop offset="0%" stop-color="#e0f2fe"/>
+                      <stop offset="45%" stop-color="#bae6fd"/>
+                      <stop offset="85%" stop-color="#38bdf8"/>
+                      <stop offset="100%" stop-color="#0284c7"/>
+                    </linearGradient>
+                    <linearGradient id="mantaBackGrad" x1="50%" y1="10%" x2="50%" y2="90%">
+                      <stop offset="0%" stop-color="#0c2d48"/>
+                      <stop offset="60%" stop-color="#144265"/>
+                      <stop offset="100%" stop-color="#082035"/>
+                    </linearGradient>
+                  </defs>
+
+                  <circle cx="80" cy="80" r="78" fill="url(#waterDepth)"/>
+                  <polygon points="40,0 75,0 110,160 70,160" fill="url(#sunbeam)"/>
+                  <polygon points="85,0 115,0 150,160 120,160" fill="url(#sunbeam)"/>
+                  <ellipse cx="80" cy="40" rx="55" ry="12" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+                  <ellipse cx="75" cy="95" rx="65" ry="16" fill="none" stroke="rgba(56,189,248,0.14)" stroke-width="1.5"/>
+
+                  <!-- Dynamic Gliding Manta Ray -->
+                  <g transform="translate(80, 78) rotate(-14) scale(0.72)">
+                    <path d="M0 32 Q 6 60, -4 95 T 8 135" fill="none" stroke="#bae6fd" stroke-width="2.5" stroke-linecap="round"/>
+                    <polygon points="-2,30 2,30 0,22" fill="#7dd3fc"/>
+                    <path d="M 0,-24 C -6,-24 -16,-22 -32,-14 C -58,-1 -86,16 -104,28 C -108,31 -105,35 -98,34 C -72,30 -44,28 -24,40 C -16,45 -8,46 0,46 C 8,46 16,45 24,40 C 44,28 72,30 98,34 C 105,35 108,31 104,28 C 86,16 58,-1 32,-14 C 16,-22 6,-24 0,-24 Z" fill="url(#mantaBodyGrad)" filter="drop-shadow(0 8px 14px rgba(0,10,25,0.65))"/>
+                    <path d="M 0,-18 C -10,-18 -22,-14 -38,-6 C -62,7 -78,19 -88,24 C -68,22 -44,22 -20,32 C -12,35 -6,36 0,36 C 6,36 12,35 20,32 C 44,22 68,22 88,24 C 78,19 62,7 38,-6 C 22,-14 10,-18 0,-18 Z" fill="url(#mantaBackGrad)"/>
+                    <path d="M -16,-12 Q -34,-2 -44,10 Q -28,8 -14,2 Z" fill="#ffffff" opacity="0.85"/>
+                    <path d="M 16,-12 Q 34,-2 44,10 Q 28,8 14,2 Z" fill="#ffffff" opacity="0.85"/>
+                    <path d="M -14,-22 C -18,-33 -10,-37 -7,-27 C -6,-23 -8,-21 -11,-20 Z" fill="#e0f2fe"/>
+                    <path d="M 14,-22 C 18,-33 10,-37 7,-27 C 6,-23 8,-21 11,-20 Z" fill="#e0f2fe"/>
+                    <circle cx="-22" cy="-14" r="2.2" fill="#031a30"/>
+                    <circle cx="-21.5" cy="-14.5" r="0.8" fill="#ffffff"/>
+                    <circle cx="22" cy="-14" r="2.2" fill="#031a30"/>
+                    <circle cx="22.5" cy="-14.5" r="0.8" fill="#ffffff"/>
+                    <ellipse cx="0" cy="12" rx="14" ry="4" fill="#38bdf8" opacity="0.25"/>
+                  </g>
+
+                  <circle cx="32" cy="45" r="4.5" fill="rgba(255,255,255,0.75)"/>
+                  <circle cx="30" cy="43" r="1.5" fill="#ffffff"/>
+                  <circle cx="128" cy="115" r="6" fill="rgba(186,230,253,0.6)"/>
+                  <circle cx="126" cy="113" r="2" fill="#ffffff"/>
+                </svg>
+
+                <div class="absolute inset-0 bg-gradient-to-b from-white/35 via-white/10 to-transparent pointer-events-none rounded-full"></div>
+              </div>
+            </div>
+
+            <!-- Online Status Tag -->
+            <span class="mt-[-12px] z-10 px-2.5 py-0.5 rounded-full bg-emerald-500 border-2 border-slate-950 text-[10px] font-bold text-white shadow-lg flex items-center gap-1 font-mono">
+              <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> ONLINE
+            </span>
+          </div>
+
+          <!-- Bio & Core Information -->
+          <div class="flex-1 space-y-2.5 sm:space-y-3 w-full">
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-1.5 sm:gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-sky-500/20 border border-sky-300/40 text-[10px] sm:text-[11px] font-bold text-cyan-300 font-mono">
+                𓇼 MANTA RAY LOVER
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-indigo-500/20 border border-indigo-300/40 text-[10px] sm:text-[11px] font-bold text-indigo-200 font-mono">
+                FAN
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-300/40 text-[10px] sm:text-[11px] font-bold text-emerald-300 font-mono">
+                PROXY SELLER
+              </span>
+            </div>
+
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold font-carrd-bubble text-white">
+              Hi, my name is <span class="shimmer-text">Nadir</span>!
+            </h2>
+
+            <p class="text-xs sm:text-sm text-sky-100/90 leading-relaxed max-w-2xl mx-auto md:mx-0">
+              Welcome to my ocean cove! This is my personal fan account, and I also frequently sell merchandise and provide dedicated proxy &amp; private concert ticketing war services. I have an immense love for <strong>manta rays</strong>! My account is safe for minors, but please note that I frequently speak toxic / vent / curse on my timeline.
+            </p>
+
+            <!-- Social Media & Contact Links -->
+            <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 pt-1">
+              <a href="https://x.com/_Junguwu" target="_blank" rel="noopener noreferrer" onclick="playAeroBubble(500)" class="aero-btn px-3.5 py-1.5 sm:py-2 rounded-xl text-xs font-bold text-white flex items-center gap-1.5">
+                <span>☆</span> Twitter / X: @_Junguwu
+              </a>
+              <div class="aero-card px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold text-cyan-200 border border-cyan-400/50 flex items-center gap-1.5">
+                <span>💬</span> Line &amp; WA GO: DM for Link
+              </div>
+              <button onclick="switchAppTab('dm-gen')" class="aero-card px-3 py-1.5 sm:py-2 rounded-xl text-xs font-bold text-sky-200 hover:text-white border border-sky-400/50 flex items-center gap-1.5">
+                <span>✉️</span> Order / Ticketing Inquiry
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stan List & Manta Details Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5">
+
+          <!-- LEFT: Stan List & Artist Roster -->
+          <div class="md:col-span-7 space-y-4">
+            <div class="p-4 sm:p-5 rounded-2xl aero-card space-y-3.5">
+              <div class="flex items-center justify-between border-b border-sky-400/25 pb-2">
+                <h3 class="text-sm sm:text-base font-bold font-carrd-bubble text-white flex items-center gap-1.5">
+                  <span>🫧</span> My Stan List &amp; Ultimates
+                </h3>
+                <span class="text-[10px] font-mono text-cyan-300">FAVES_ROSTER.DAT</span>
+              </div>
+
+              <!-- Main Artist Spotlight: Jay Park & Kbands -->
+              <div class="p-3.5 sm:p-4 rounded-xl bg-gradient-to-r from-sky-950/90 to-indigo-950/70 border border-cyan-400/30 space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="text-[11px] font-bold text-cyan-300 font-carrd-tech uppercase tracking-wider">
+                    ★ Main Artist &amp; Ult Favorite:
+                  </span>
+                </div>
+                <div class="text-sm sm:text-base font-bold text-white font-carrd-bubble flex items-center gap-2">
+                  <span>👑</span> Jay Park (박재범)
+                </div>
+              </div>
+
+              <!-- Boy Groups Grid -->
+              <div class="space-y-2">
+                <span class="text-[11px] font-bold text-cyan-300 font-carrd-tech uppercase tracking-wider block">
+                  Groups I Love &amp; Collect:
+                </span>
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 pt-0.5">
+                  <div class="p-2 rounded-xl bg-slate-900/60 border border-sky-400/20 text-center hover:border-cyan-300 transition">
+                    <span class="text-xs font-bold text-white block">1THE9</span>
+                    <span class="text-[10px] text-sky-300 font-mono">원더나인</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-900/60 border border-sky-400/20 text-center hover:border-cyan-300 transition">
+                    <span class="text-xs font-bold text-white block">Boynextdoor</span>
+                    <span class="text-[10px] text-sky-300 font-mono">보이넥스트도어</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-900/60 border border-sky-400/20 text-center hover:border-cyan-300 transition">
+                    <span class="text-xs font-bold text-white block">Seventeen</span>
+                    <span class="text-[10px] text-sky-300 font-mono">세븐틴</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-900/60 border border-sky-400/20 text-center hover:border-cyan-300 transition">
+                    <span class="text-xs font-bold text-white block">Lngshot</span>
+                    <span class="text-[10px] text-sky-300 font-mono">롱샷</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-900/60 border border-sky-400/20 text-center hover:border-cyan-300 transition">
+                    <span class="text-xs font-bold text-white block">Plave</span>
+                    <span class="text-[10px] text-sky-300 font-mono">플레이브</span>
+                  </div>
+                  <div class="p-2 rounded-xl bg-slate-900/60 border border-sky-400/20 text-center hover:border-cyan-300 transition">
+                    <span class="text-xs font-bold text-white block">Kbands &amp; KR&amp;B</span>
+                    <span class="text-[10px] text-sky-300 font-mono">Day6, Lucy, etc.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Manta Ray Marine Facts -->
+          <div class="md:col-span-5 space-y-4">
+            <div class="p-4 sm:p-5 rounded-2xl aero-card space-y-3">
+              <div class="flex items-center justify-between border-b border-sky-400/25 pb-2">
+                <h3 class="text-sm sm:text-base font-bold font-carrd-bubble text-white flex items-center gap-1.5">
+                  <span>🌊</span> Why Manta Rays?
+                </h3>
+                <span class="text-xs text-sky-300 font-mono">𓇼 𓇼 𓇼</span>
+              </div>
+
+              <p class="text-xs text-sky-100/90 leading-relaxed">
+                Manta rays possess the largest brain-to-body weight ratio of any fish in the world. They are peaceful filter feeders that glide effortlessly like underwater birds. They represent calm focus and elegance in deep water.
+              </p>
+
+              <div class="space-y-2 pt-1 font-carrd-tech text-xs">
+                <div class="flex justify-between text-sky-200 text-[11px]">
+                  <span>Giant Oceanic Manta Wingspan</span>
+                  <span class="text-cyan-300 font-bold">Up to 7.0 meters</span>
+                </div>
+                <div class="w-full bg-slate-900/80 rounded-full h-2 overflow-hidden border border-sky-400/30">
+                  <div class="bg-gradient-to-r from-sky-400 to-cyan-300 h-full w-[88%]"></div>
+                </div>
+
+                <div class="flex justify-between text-sky-200 text-[11px] pt-1">
+                  <span>Reef Manta Intelligence Factor</span>
+                  <span class="text-emerald-300 font-bold">Self-aware / Mirror test</span>
+                </div>
+                <div class="w-full bg-slate-900/80 rounded-full h-2 overflow-hidden border border-sky-400/30">
+                  <div class="bg-gradient-to-r from-cyan-400 to-emerald-400 h-full w-[95%]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ================= TAB: SHOP / PROXIES ================= -->
+      <div id="tab-content-shop" class="p-3.5 sm:p-6 space-y-4 sm:space-y-6 hidden">
+
+        <!-- Proxy Header Banner -->
+        <div class="text-center space-y-2 max-w-2xl mx-auto">
+          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold font-carrd-bubble text-white">
+            𓇼 Overseas Proxy Buying Hub 𓇼
+          </h2>
+          <p class="text-xs sm:text-sm text-sky-200/80">
+            Need merchandise, albums, or goods from Korea, Japan, China, or Taiwan? I can help you order!
+          </p>
+        </div>
+
+        <!-- Group Order (Line & WhatsApp) Spotlight -->
+        <div class="p-4 sm:p-5 rounded-2xl aero-card border border-cyan-400/40 bg-gradient-to-r from-sky-950/90 via-slate-950/80 to-indigo-950/90 space-y-2.5">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-sky-400/25 pb-2">
+            <div class="flex items-center gap-2">
+              <span class="text-lg sm:text-xl">🫧</span>
+              <h3 class="text-sm sm:text-base font-bold font-carrd-bubble text-white">Line &amp; WhatsApp Group Orders (GO)</h3>
+            </div>
+            <span class="text-[9px] sm:text-[10px] px-2 py-0.5 rounded-md bg-emerald-950 border border-emerald-400/40 text-emerald-300 font-mono">
+              ACTIVE GROUP CHATS
+            </span>
+          </div>
+          <p class="text-xs sm:text-sm text-sky-100/90 leading-relaxed">
+            I run dedicated GO groups on <strong>Line</strong> and <strong>WhatsApp</strong>! Mainly selling items for <strong>Jay Park, Lngshot, Cortis</strong>, and sometimes <strong>Boynextdoor</strong>. I also frequently order and drop cute collectibles like <strong>poca holders</strong>, binder sleeves, and other fan essentials.
+          </p>
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 pt-1">
+            <span class="text-[11px] sm:text-xs text-cyan-300 font-mono">
+              ✦ Want to join the group chat? <strong>Please DM me on Twitter/X to get the link!</strong>
+            </span>
+            <a href="https://x.com/_Junguwu" target="_blank" rel="noopener noreferrer" class="aero-btn w-full sm:w-auto px-4 py-1.5 rounded-xl text-xs font-bold text-white flex items-center justify-center gap-1.5">
+              <span>✉️</span> DM @_Junguwu for GO Link
+            </a>
+          </div>
+        </div>
+
+        <!-- 4 Country Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4">
+
+          <!-- Card 1: South Korea Proxy -->
+          <div class="p-4 rounded-2xl aero-card space-y-2.5 hover:border-cyan-300 transition flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-2xl">🇰🇷</span>
+                <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-sky-950 border border-cyan-400/40 text-cyan-300 font-mono">KOREA PROXY</span>
+              </div>
+              <h3 class="font-bold text-white text-sm sm:text-base font-carrd-bubble">South Korea</h3>
+              <p class="text-[11px] text-sky-200/70 font-mono">Weverse, Fromm, Withmuu, Aladin, Yes24, Bunjang, etc.</p>
+              <ul class="text-xs text-sky-100 space-y-1 list-disc list-inside">
+                <li>Album pre-orders &amp; official POBs</li>
+                <li>Online web store checkouts</li>
+              </ul>
+            </div>
+            <div class="pt-2 border-t border-sky-400/20 text-xs text-amber-200 font-semibold">
+              Offline pickup: ❌ <span class="block text-[11px] text-sky-200 font-normal">(can ask handcarry person!)</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Japan Proxy -->
+          <div class="p-4 rounded-2xl aero-card space-y-2.5 hover:border-cyan-300 transition flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-2xl">🇯🇵</span>
+                <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-sky-950 border border-cyan-400/40 text-cyan-300 font-mono">JAPAN PROXY</span>
+              </div>
+              <h3 class="font-bold text-white text-sm sm:text-base font-carrd-bubble">Japan</h3>
+              <p class="text-[11px] text-sky-200/70 font-mono">Mercari JP</p>
+              <ul class="text-xs text-sky-100 space-y-1 list-disc list-inside">
+                <li>Mercari JP buyouts &amp; web stores</li>
+                <li>Fanclub exclusives &amp; Lucky Draws</li>
+              </ul>
+            </div>
+            <div class="pt-2 border-t border-sky-400/20 text-xs text-amber-200 font-semibold">
+              Offline pickup: ❌ <span class="block text-[11px] text-sky-200 font-normal">(can ask handcarry person!)</span>
+            </div>
+          </div>
+
+          <!-- Card 3: China Proxy -->
+          <div class="p-4 rounded-2xl aero-card space-y-2.5 hover:border-cyan-300 transition flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-2xl">🇨🇳</span>
+                <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-sky-950 border border-cyan-400/40 text-cyan-300 font-mono">CHINA PROXY</span>
+              </div>
+              <h3 class="font-bold text-white text-sm sm:text-base font-carrd-bubble">China (Mainland)</h3>
+              <p class="text-[11px] text-sky-200/70 font-mono">Taobao, Xianyu, Weibo, PDD, 1688</p>
+              <ul class="text-xs text-sky-100 space-y-1 list-disc list-inside">
+                <li>Taobao stores &amp; Xianyu claims</li>
+                <li>Exclusive Chinese POBs &amp; fan goods</li>
+              </ul>
+            </div>
+            <div class="pt-2 border-t border-sky-400/20 text-xs text-amber-200 font-semibold">
+              Offline pickup: ❌ <span class="block text-[11px] text-sky-200 font-normal">(can ask handcarry person!)</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Taiwan Proxy -->
+          <div class="p-4 rounded-2xl aero-card space-y-2.5 hover:border-cyan-300 transition flex flex-col justify-between">
+            <div class="space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-2xl">🇹🇼</span>
+                <span class="text-[9px] font-bold px-2 py-0.5 rounded bg-sky-950 border border-cyan-400/40 text-cyan-300 font-mono">TAIWAN PROXY</span>
+              </div>
+              <h3 class="font-bold text-white text-sm sm:text-base font-carrd-bubble">Taiwan</h3>
+              <p class="text-[11px] text-sky-200/70 font-mono">Koca, Shopee Tw, Taiwan Web</p>
+              <ul class="text-xs text-sky-100 space-y-1 list-disc list-inside">
+                <li>Taiwan localized editions &amp; photocards</li>
+                <li>Online shops &amp; event items</li>
+              </ul>
+            </div>
+            <div class="pt-2 border-t border-sky-400/20 text-xs text-amber-200 font-semibold">
+              Offline pickup: ❌ <span class="block text-[11px] text-sky-200 font-normal">(can ask handcarry person!)</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ================= TAB: TICKETING ================= -->
+      <div id="tab-content-ticketing" class="p-3.5 sm:p-6 space-y-4 sm:space-y-6 hidden">
+
+        <!-- Ticketing Hero Banner -->
+        <div class="p-4 sm:p-6 rounded-2xl aero-card border border-cyan-400/40 space-y-3 sm:space-y-4 bg-gradient-to-r from-sky-950/90 via-slate-950/80 to-blue-950/90">
+          <div class="space-y-1.5">
+            <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-300/40 text-[10px] sm:text-xs font-bold text-emerald-300 font-mono">
+              🎟️ 1–2 PERSON ORDER PER CONCERT ONLY
+            </span>
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-bold font-carrd-bubble text-white">
+              Private Concert Ticketing
+            </h2>
+            <p class="text-xs sm:text-sm text-sky-100/90 leading-relaxed max-w-3xl">
+              I open private concert ticketing war service! I strictly only accept <strong>1 to 2 person orders per concert</strong> so I can fully focus on getting your seat without splitting my attention.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 pt-1">
+            <!-- Point 1: Fee -->
+            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-sky-400/30 space-y-1">
+              <span class="text-cyan-300 font-bold text-xs font-mono block">💰 FEE POLICY</span>
+              <strong class="text-white text-xs sm:text-sm block">Fee is Seikhlasnya</strong>
+              <p class="text-xs text-sky-200/80 leading-relaxed">
+                Pay what you want / seikhlasnya! You decide the tip once we secure your ticket.
+              </p>
+            </div>
+
+            <!-- Point 2: Ticketmaster Note -->
+            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-sky-400/30 space-y-1">
+              <span class="text-cyan-300 font-bold text-xs font-mono block">🌐 TICKETMASTER</span>
+              <strong class="text-white text-xs sm:text-sm block">Must Provide Your Account</strong>
+              <p class="text-xs text-sky-200/80 leading-relaxed">
+                I can help war on Ticketmaster, but I do not own an account, so you will need to provide your own Ticketmaster login details before war time.
+              </p>
+            </div>
+
+            <!-- Point 3: Track Record -->
+            <div class="p-3.5 rounded-xl bg-slate-900/70 border border-sky-400/30 space-y-1">
+              <span class="text-cyan-300 font-bold text-xs font-mono block">🏆 SUCCESS TRACK</span>
+              <strong class="text-white text-xs sm:text-sm block">Secured Plenty of Tickets</strong>
+              <p class="text-xs text-sky-200/80 leading-relaxed">
+                I have successfully secured many tickets and tours before! Proofs / receipts can be shared via DM if you want to see them.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- How It Works Flow -->
+        <div class="p-4 sm:p-5 rounded-2xl aero-card space-y-3">
+          <h3 class="text-sm sm:text-base font-bold font-carrd-bubble text-white border-b border-sky-400/20 pb-2">
+            📋 How to Order Ticketing
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 sm:gap-3 text-xs">
+            <div class="p-3 rounded-xl bg-slate-900/60 border border-sky-400/20 space-y-1">
+              <span class="text-cyan-300 font-bold block font-mono">01. DM Me the Details</span>
+              <p class="text-sky-200/70">Send concert name, preferred seat tiers, date, and ticketing site.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/60 border border-sky-400/20 space-y-1">
+              <span class="text-cyan-300 font-bold block font-mono">02. Account Prep</span>
+              <p class="text-sky-200/70">Provide your account login (especially for Ticketmaster) beforehand.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-900/60 border border-sky-400/20 space-y-1">
+              <span class="text-cyan-300 font-bold block font-mono">03. War &amp; Payment</span>
+              <p class="text-sky-200/70">I queue for your tickets, and once secured, fee is seikhlasnya!</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= TAB: BYF & DNI ================= -->
+      <div id="tab-content-byf-dfi" class="p-3.5 sm:p-6 space-y-4 sm:space-y-6 hidden">
+
+        <!-- Tone Warning Callout Box -->
+        <div class="p-4 sm:p-5 rounded-2xl bg-amber-500/10 border-2 border-amber-400/40 space-y-2.5">
+          <div class="flex items-center gap-2 text-amber-300 font-bold text-xs sm:text-sm font-carrd-bubble">
+            <span class="text-base sm:text-lg">⚠️</span> IMPORTANT TONE DISCLAIMER / PLEASE READ BEFORE FOLLOWING
+          </div>
+          <p class="text-xs sm:text-sm text-amber-100/90 leading-relaxed">
+            My account is <strong>safe for minors</strong> (SFW). However, <strong>I frequently speak toxic, vent, or use harsh language / curse words on my timeline</strong>. If you are sensitive, easily offended, or uncomfortable with harsh talk, <strong>please do NOT follow me</strong>! I value your peace of mind and my own freedom to speak candidly.
+          </p>
+        </div>
+
+        <!-- DNI Criteria Matrix -->
+        <div class="p-4 sm:p-5 rounded-2xl aero-card space-y-3.5">
+          <div class="border-b border-sky-400/20 pb-2">
+            <h3 class="text-sm sm:text-base font-bold font-carrd-bubble text-white flex items-center gap-2">
+              <span>🚫</span> Do Not Interact (DNI) If You:
+            </h3>
+            <span class="text-xs text-sky-300/70 font-mono">Strict boundaries for a clean timeline</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-3">
+            <div class="p-3 rounded-xl bg-slate-900/70 border border-sky-400/30 flex items-start gap-2.5">
+              <span class="text-rose-400 font-bold text-sm">✕</span>
+              <div class="text-xs">
+                <strong class="text-white block">Fit Basic DNI Criteria</strong>
+                <span class="text-sky-200/70">Homophobic, transphobic, racist, ableist, or spread hate speech.</span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900/70 border border-sky-400/30 flex items-start gap-2.5">
+              <span class="text-rose-400 font-bold text-sm">✕</span>
+              <div class="text-xs">
+                <strong class="text-white block">Uncomfortable with Venting</strong>
+                <span class="text-sky-200/70">Can't handle swearing, toxic rants, or emotional venting posts.</span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900/70 border border-sky-400/30 flex items-start gap-2.5">
+              <span class="text-rose-400 font-bold text-sm">✕</span>
+              <div class="text-xs">
+                <strong class="text-white block">Anti-Jay Park / Kbands / Faves</strong>
+                <span class="text-sky-200/70">Anti 1the9, Boynextdoor, Seventeen, Lngshot, Plave, or Jay Park.</span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900/70 border border-sky-400/30 flex items-start gap-2.5">
+              <span class="text-rose-400 font-bold text-sm">✕</span>
+              <div class="text-xs">
+                <strong class="text-white block">Hit-and-Run / Ghost Buyers</strong>
+                <span class="text-sky-200/70">Claim proxy slots or merch orders and disappear when billing begins.</span>
+              </div>
+            </div>
+
+            <div class="p-3 rounded-xl bg-slate-900/70 border border-sky-400/30 flex items-start gap-2.5">
+              <span class="text-rose-400 font-bold text-sm">✕</span>
+              <div class="text-xs">
+                <strong class="text-white block">Drama Instigators</strong>
+                <span class="text-sky-200/70">Starting unnecessary fanwars or subtweeting community members.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ================= TAB: DM HELPER ================= -->
+      <div id="tab-content-dm-gen" class="p-3.5 sm:p-6 space-y-4 sm:space-y-6 hidden">
+
+        <div class="text-center space-y-1.5 max-w-xl mx-auto">
+          <h2 class="text-xl sm:text-2xl font-bold font-carrd-bubble text-white">
+            💬 Quick Order &amp; Ticketing DM Helper
+          </h2>
+          <p class="text-xs sm:text-sm text-sky-200/80">
+            Pick your service below, fill in your details, and copy the formatted message to send directly to me on Twitter/X!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5">
+          <!-- Form Inputs -->
+          <div class="md:col-span-6 p-4 sm:p-5 rounded-2xl aero-card space-y-3 text-xs font-carrd-tech">
+
+            <div class="space-y-1">
+              <label for="dm-type-select" class="text-sky-300 font-bold block">Inquiry Type:</label>
+              <select id="dm-type-select" onchange="updateDMPreview()" class="w-full bg-slate-900 border border-sky-400/40 rounded-xl px-3 py-2 text-white outline-none">
+                <option value="proxy">📦 Overseas Proxy Order (KR / JP / CN / TW)</option>
+                <option value="ticketing">🎟️ Private Concert Ticketing (1–2 Slots, Fee Seikhlasnya)</option>
+              </select>
+            </div>
+
+            <div class="space-y-1">
+              <label for="dm-user-handle" class="text-sky-300 font-bold block">Your Username / Handle:</label>
+              <input type="text" id="dm-user-handle" value="@yourhandle" oninput="updateDMPreview()" class="w-full bg-slate-900 border border-sky-400/40 rounded-xl px-3 py-2 text-white outline-none">
+            </div>
+
+            <div class="space-y-1">
+              <label for="dm-item-details" class="text-sky-300 font-bold block">Item Link / Concert Name &amp; Date:</label>
+              <input type="text" id="dm-item-details" value="Jay Park Concert / Day6 Merch Link" oninput="updateDMPreview()" class="w-full bg-slate-900 border border-sky-400/40 rounded-xl px-3 py-2 text-white outline-none">
+            </div>
+
+            <div class="space-y-1">
+              <label for="dm-notes" class="text-sky-300 font-bold block">Notes / Questions:</label>
+              <textarea id="dm-notes" oninput="updateDMPreview()" rows="2" class="w-full bg-slate-900 border border-sky-400/40 rounded-xl px-3 py-2 text-white outline-none">Interested in fee rates and shipping timetable!</textarea>
+            </div>
+          </div>
+
+          <!-- Preview & Copy Action -->
+          <div class="md:col-span-6 p-4 sm:p-5 rounded-2xl aero-card flex flex-col justify-between space-y-3">
+            <div>
+              <div class="flex items-center justify-between border-b border-sky-400/20 pb-2 mb-2">
+                <span class="text-xs font-bold text-cyan-300 font-mono">READY-TO-COPY PREVIEW</span>
+                <span class="text-[10px] text-slate-400">Paste in Twitter / X DM</span>
+              </div>
+              <pre id="dm-output-text" class="w-full p-3 rounded-xl bg-slate-950/80 border border-sky-400/30 font-mono text-xs text-sky-100 whitespace-pre-wrap select-all leading-relaxed"></pre>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-2 pt-2">
+              <button onclick="copyGeneratedDM()" class="flex-1 py-2 sm:py-2.5 rounded-xl aero-btn text-white text-xs font-bold flex items-center justify-center gap-2">
+                <span>📋</span> Copy Formatted DM
+              </button>
+              <a href="https://x.com/_Junguwu" target="_blank" rel="noopener noreferrer" class="px-4 py-2 sm:py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-sky-200 text-xs font-bold text-center border border-sky-400/30 transition">
+                Open @_Junguwu on X
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Window Footer -->
+      <footer class="aero-titlebar px-3 sm:px-4 py-2 sm:py-2.5 flex flex-col sm:flex-row items-center justify-between text-xs text-sky-100 gap-2 border-t border-white/30">
+        <div class="flex items-center gap-2 font-carrd-tech">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>© 2026 Nadir 𓇼 Manta Cove</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="text-cyan-100/90 font-mono text-[11px]">coded with love &amp; sea foam 𓇼</span>
+          <button onclick="scrollToTop()" class="px-2.5 py-1 rounded bg-slate-900/60 hover:bg-slate-900 text-white text-[11px] border border-white/40 shadow-sm transition">
+            ▲ Top
+          </button>
+        </div>
+      </footer>
+
+    </div>
+
+  </main>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-gradient-to-r from-sky-400 to-cyan-400 text-slate-950 font-bold px-4 py-2.5 rounded-xl shadow-2xl transition-all duration-300 transform translate-y-24 opacity-0 pointer-events-none text-xs flex items-center gap-2 z-50">
+    <span class="text-base">🫧</span> <span id="toast-msg">Copied!</span>
+  </div>
+
+  <script>
+    // Tab Switching System
+    const tabsList = ['profile', 'shop', 'ticketing', 'byf-dfi', 'dm-gen'];
+
+    function switchAppTab(tabId) {
+      tabsList.forEach(t => {
+        const c = document.getElementById(`tab-content-${t}`);
+        const n = document.getElementById(`nav-tab-${t}`);
+        if (c) c.classList.add('hidden');
+        if (n) n.classList.remove('active');
+      });
+
+      const targetContent = document.getElementById(`tab-content-${tabId}`);
+      const targetNav = document.getElementById(`nav-tab-${tabId}`);
+      if (targetContent) targetContent.classList.remove('hidden');
+      if (targetNav) {
+        targetNav.classList.add('active');
+        targetNav.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+      }
+
+      const urlSlug = document.getElementById('active-url-slug');
+      if (urlSlug) urlSlug.innerText = tabId;
+
+      playAeroBubble(420);
+    }
+
+    function navigateTabRel(offset) {
+      const activeNav = document.querySelector('.aero-nav-tab.active');
+      if (!activeNav) return;
+      const currentId = activeNav.id.replace('nav-tab-', '');
+      let idx = tabsList.indexOf(currentId);
+      idx = (idx + offset + tabsList.length) % tabsList.length;
+      switchAppTab(tabsList[idx]);
+    }
+
+    function reloadActiveTab() {
+      playAeroBubble(600);
+      showToast('Cove refreshed ⟳');
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      playAeroBubble(480);
+    }
+
+    // Direct Windows Media Player 11 Controller
+    const audio = document.getElementById('real-audio-player');
+    const playSymbol = document.getElementById('play-symbol');
+    const statusTag = document.getElementById('player-status-tag');
+    const visCanvas = document.getElementById('player-visualizer');
+    const visCtx = visCanvas ? visCanvas.getContext('2d') : null;
+    let isPlaying = false;
+    let animFrameId = null;
+
+    function updatePlayerStateUI(playing) {
+      isPlaying = playing;
+      const musicIcon = document.getElementById('music-icon');
+      const musicState = document.getElementById('music-state');
+
+      if (playing) {
+        if (playSymbol) playSymbol.textContent = "❚❚";
+        if (statusTag) {
+          statusTag.textContent = "PLAYING";
+          statusTag.className = "shrink-0 text-emerald-400 font-mono";
+        }
+        if (musicIcon) musicIcon.textContent = "🔊";
+        if (musicState) {
+          musicState.textContent = "ON";
+          musicState.className = "text-emerald-300";
+        }
+        drawVisualizer();
+      } else {
+        if (playSymbol) playSymbol.textContent = "▶";
+        if (statusTag) {
+          statusTag.textContent = "PAUSED";
+          statusTag.className = "shrink-0 text-slate-400 font-mono";
+        }
+        if (musicIcon) musicIcon.textContent = "🔇";
+        if (musicState) {
+          musicState.textContent = "OFF";
+          musicState.className = "text-slate-400";
+        }
+        cancelAnimationFrame(animFrameId);
+        drawVisualizer();
+      }
+    }
+
+    function drawVisualizer() {
+      if (!visCtx) return;
+      visCtx.clearRect(0, 0, visCanvas.width, visCanvas.height);
+      const barCount = 6;
+      const barWidth = 4;
+      const gap = 3;
+      const startX = 2;
+
+      for (let i = 0; i < barCount; i++) {
+        const height = isPlaying ? Math.floor(Math.random() * 10) + 3 : 2;
+        const y = visCanvas.height - height;
+        visCtx.fillStyle = isPlaying ? '#38bdf8' : '#334155';
+        visCtx.fillRect(startX + i * (barWidth + gap), y, barWidth, height);
+      }
+
+      if (isPlaying) {
+        animFrameId = requestAnimationFrame(drawVisualizer);
+      }
+    }
+
+    function toggleMusicPlayback() {
+      if (!audio) return;
+      if (audio.paused) {
+        if (statusTag) statusTag.textContent = "BUFFERING...";
+        audio.play()
+          .then(() => {
+            updatePlayerStateUI(true);
+            showToast('♪ Playing Jay Park - All I Wanna Do');
+          })
+          .catch((err) => {
+            console.warn("song.mp3 playback error:", err);
+            updatePlayerStateUI(false);
+            if (statusTag) {
+              statusTag.textContent = "NO AUDIO";
+              statusTag.className = "shrink-0 text-rose-400 font-mono";
+            }
+            showToast('⚠️ Re-upload a real 3-5MB song.mp3 to GitHub!');
+          });
+      } else {
+        audio.pause();
+        updatePlayerStateUI(false);
+        showToast('Audio Paused');
+      }
+    }
+
+    if (audio) {
+      audio.addEventListener('ended', () => {
+        updatePlayerStateUI(false);
+        if (statusTag) statusTag.textContent = "FINISHED";
+      });
+    }
+
+    // Audio Context for Aero Bubble SFX
+    let audioCtx = null;
+    let sfxEnabled = true;
+
+    function playAeroBubble(freq = 440) {
+      if (!sfxEnabled) return;
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!audioCtx) audioCtx = new AudioContext();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(freq * 1.5, audioCtx.currentTime + 0.12);
+        gain.gain.setValueAtTime(0.06, audioCtx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 0.16);
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+        osc.start();
+        osc.stop(audioCtx.currentTime + 0.16);
+      } catch (err) {}
+    }
+
+    // DM Template Generator
+    function updateDMPreview() {
+      const type = document.getElementById('dm-type-select').value;
+      const handle = document.getElementById('dm-user-handle').value.trim() || '@user';
+      const item = document.getElementById('dm-item-details').value.trim() || 'Details';
+      const notes = document.getElementById('dm-notes').value.trim() || 'None';
+
+      let template = '';
+      if (type === 'proxy') {
+        template = `Hi Nadir! 𓇼 I'd like to ask for an overseas proxy quote.\n\n• My Handle: ${handle}\n• Item Link / Goods: ${item}\n• Notes: ${notes}\n\nThank you!`;
+      } else {
+        template = `Hi Nadir! 𓇼 Inquiring about your private concert ticketing service (fee seikhlasnya).\n\n• My Handle: ${handle}\n• Concert / Date / Platform: ${item}\n• Notes: ${notes}\n\nReady with account details!`;
+      }
+
+      document.getElementById('dm-output-text').innerText = template;
+    }
+
+    function copyGeneratedDM() {
+      const text = document.getElementById('dm-output-text').innerText;
+      if (document.queryCommandSupported && document.queryCommandSupported('copy')) {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        playAeroBubble(650);
+        showToast('DM Template Copied! Ready to send to Nadir.');
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-msg').innerText = msg;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+      }, 2400);
+    }
+
+    // Deep Ocean Ambient Canvas
+    window.addEventListener('DOMContentLoaded', () => {
+      updateDMPreview();
+      drawVisualizer();
+
+      const canvas = document.getElementById('ambient-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let w = canvas.width = window.innerWidth;
+      let h = canvas.height = window.innerHeight;
+
+      window.addEventListener('resize', () => {
+        w = canvas.width = window.innerWidth;
+        h = canvas.height = window.innerHeight;
+      });
+
+      const mantas = [
+        { x: w * 0.2, y: h * 0.35, scale: 0.75, angle: 0.12, speed: 0.4 },
+        { x: w * 0.8, y: h * 0.72, scale: 0.5, angle: -0.15, speed: 0.3 }
+      ];
+
+      const bubbles = Array.from({ length: 20 }, () => ({
+        x: Math.random() * w,
+        y: Math.random() * h + h,
+        r: Math.random() * 6 + 2,
+        speed: Math.random() * 0.6 + 0.3,
+        wobble: Math.random() * Math.PI * 2
+      }));
+
+      function drawManta(ctx, x, y, scale, rot) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(rot);
+        ctx.scale(scale, scale);
+        ctx.fillStyle = 'rgba(180, 230, 255, 0.1)';
+        ctx.beginPath();
+        ctx.moveTo(0, -30);
+        ctx.bezierCurveTo(20, -28, 75, -10, 95, 10);
+        ctx.bezierCurveTo(80, 25, 40, 15, 15, 20);
+        ctx.bezierCurveTo(10, 35, 4, 60, 2, 85);
+        ctx.lineTo(-2, 85);
+        ctx.bezierCurveTo(-4, 60, -10, 35, -15, 20);
+        ctx.bezierCurveTo(-40, 15, -80, 25, -95, 10);
+        ctx.bezierCurveTo(-75, -10, -20, -28, 0, -30);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+      }
+
+      let time = 0;
+      function renderBackdrop() {
+        ctx.clearRect(0, 0, w, h);
+        time += 0.02;
+
+        mantas.forEach(m => {
+          m.x += Math.cos(m.angle) * m.speed;
+          m.y += Math.sin(m.angle) * m.speed + Math.sin(time) * 0.2;
+          if (m.x > w + 120) m.x = -120;
+          if (m.y > h + 120) m.y = -120;
+          drawManta(ctx, m.x, m.y, m.scale, m.angle + Math.sin(time) * 0.05);
+        });
+
+        bubbles.forEach(b => {
+          b.y -= b.speed;
+          b.wobble += 0.03;
+          const wobbleX = b.x + Math.sin(b.wobble) * 10;
+          ctx.fillStyle = 'rgba(255, 255, 255, 0.16)';
+          ctx.beginPath();
+          ctx.arc(wobbleX, b.y, b.r, 0, Math.PI * 2);
+          ctx.fill();
+          if (b.y < -20) {
+            b.y = h + 20;
+            b.x = Math.random() * w;
+          }
+        });
+
+        requestAnimationFrame(renderBackdrop);
+      }
+
+      renderBackdrop();
+    });
+  </script>
+</body>
+</html>
