@@ -1047,7 +1047,7 @@
       } catch (err) {}
     }
 
-    // DM Template Generator
+   // DM Template Generator
     function updateDMPreview() {
       const type = document.getElementById('dm-type-select').value;
       const handle = document.getElementById('dm-user-handle').value.trim() || '@user';
@@ -1055,11 +1055,10 @@
       const notes = document.getElementById('dm-notes').value.trim() || 'None';
 
       let template = '';
-      let template = '';
       if (type === 'proxy') {
         template = `Hi Nadir! 𓇼 I'd like to ask for an overseas proxy quote.\n\n• My Handle: ${handle}\n• Item Link / Goods: ${item}\n• Notes: ${notes}\n\nThank you!`;
       } else {
-        template = `Hi Nadir! 𓇼 Inquiring about your private concert ticketing service.\n\n• My Handle: ${handle}\n• Concert / Date / Platform: ${item}\n• Notes: ${notes}\n;
+        template = `Hi Nadir! 𓇼 Inquiring about your private concert ticketing service.\n\n• My Handle: ${handle}\n• Concert / Date / Platform: ${item}\n• Notes: ${notes}\n\nReady with account details!`;
       }
 
       document.getElementById('dm-output-text').innerText = template;
